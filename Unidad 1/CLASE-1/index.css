@@ -1,0 +1,199 @@
+Clase pagina web css 
+Aquí tienes todo tu código CSS con los comentarios detallados explicados paso a paso para cada regla y propiedad, indicando exactamente qué hace cada una en la página web:
+
+CSS
+/* ==========================================================================
+   CONFIGURACIÓN GENERAL DE LA PÁGINA
+   ========================================================================== */
+
+/* Define los estilos generales para todo el cuerpo de la página */
+body {
+  font-family: Arial, Helvetica, sans-serif; /* Define la tipografía principal limpia e inequívoca */
+  background-color: #ffffff;                 /* Establece el fondo de la página en blanco */
+  color: #000000;                            /* Establece el color de texto general en negro */
+  line-height: 1.6;                          /* Aumenta la altura de línea para mejorar la legibilidad del texto */
+  max-width: 800px;                          /* Limita el ancho máximo del contenido a 800 píxeles */
+  margin: 30px auto;                         /* Centra todo el bloque del cuerpo horizontalmente en la pantalla */
+  padding: 0 20px;                           /* Añade un espacio de seguridad interno a los lados de 20px */
+  text-align: left;                          /* Alinea el texto de la página por defecto a la izquierda */
+}
+
+
+/* ==========================================================================
+   CABECERA Y TÍTULOS
+   ========================================================================== */
+
+/* Título principal de la página (H1) */
+h1 {
+  background-color: #3388ee; /* Pone un fondo azul brillante a todo el bloque del título */
+  color: #ffffff;            /* Cambia el color del texto del título a blanco */
+  text-align: center;        /* Centra el texto del título horizontalmente dentro de su bloque */
+  padding: 12px 20px;        /* Relleno interno arriba/abajo (12px) e izquierda/derecha (20px) */
+  margin-top: 40px;          /* Espacio exterior superior respecto al margen superior */
+  width: 100%;               /* Ocupa el 100% del ancho disponible de su contenedor */
+  box-sizing: border-box;    /* Garantiza que el padding no aumente el ancho total del contenedor */
+}
+
+/* Títulos de sección (H2): Estilo azul con línea divisoria inferior */
+h2 {
+  font-size: 1.6rem;         /* Ajusta el tamaño de la fuente a 1.6 rem */
+  color: #3388ee;            /* Aplica el color azul corporativo al texto del título */
+  font-weight: bold;         /* Pone el texto en negrita */
+  margin-top: 35px;          /* Añade separación en la parte superior antes del título */
+  margin-bottom: 15px;       /* Añade separación en la parte inferior después del título */
+  border-bottom: 2px solid #3388ee; /* Crea una línea horizontal azul debajo del título */
+  padding-bottom: 5px;       /* Añade un pequeño espacio de 5px entre el texto y la línea azul */
+  text-align: left;          /* Garantiza la alineación a la izquierda */
+}
+
+/* Subtítulos de nivel 3 (H3) */
+h3 {
+  font-size: 1.2rem;         /* Define el tamaño de la fuente para subsecciones */
+  color: #000000;            /* Mantiene el texto en color negro */
+  font-weight: bold;         /* Pone el título en negrita */
+  margin-top: 20px;          /* Margen de separación superior */
+  margin-bottom: 10px;       /* Margen de separación inferior */
+  text-align: left;          /* Alineación a la izquierda */
+}
+
+
+/* ==========================================================================
+   PÁRRAFOS Y ENLACES
+   ========================================================================== */
+
+/* Configuración para todos los párrafos estándar */
+p {
+  margin-bottom: 15px;       /* Otorga espacio inferior entre un párrafo y el siguiente elemento */
+  text-align: left;          /* Asegura que el texto esté alineado a la izquierda */
+}
+
+/* Estilo para todos los hipervínculos/enlaces */
+a {
+  color: #3388ee;            /* Establece el color de los enlaces en azul */
+  text-decoration: underline;/* Añade un subrayado inferior para identificar que es un enlace */
+}
+
+
+/* ==========================================================================
+   FORMATOS Y FORMATO DE TEXTO
+   ========================================================================== */
+
+/* Texto resaltado mediante <mark> */
+mark {
+  background-color: #ffff00 !important; /* Aplica un fondo amarillo brillante prioritario */
+  color: #000000 !important;            /* Mantiene el texto interior en negro brillante prioritario */
+  padding: 0 2px;                       /* Relleno mínimo lateral para que no pegue con los bordes */
+}
+
+/* Texto en negrita <strong> */
+strong {
+  font-weight: bold;         /* Aplica peso de letra en negrita */
+}
+
+/* Texto enfatizado en cursiva <em> */
+em {
+  font-style: italic;        /* Aplica estilo en cursiva */
+}
+
+/* Texto pequeño <small> */
+small {
+  font-size: 0.85em;         /* Reduce un 15% el tamaño del texto respecto a su contenedor */
+}
+
+/* Texto tachado/eliminado <del> */
+del {
+  text-decoration: line-through; /* Pone una línea tachada horizontal sobre el texto */
+}
+
+/* Texto insertado/subrayado <ins> */
+ins {
+  text-decoration: underline; /* Agrega un subrayado al texto recién añadido */
+}
+
+/* Texto en subíndice <sub> */
+sub {
+  vertical-align: sub;       /* Desplaza el texto ligeramente hacia abajo */
+  font-size: 0.75em;         /* Reduce el tamaño del subíndice al 75% */
+}
+
+/* Texto en superíndice <sup> */
+sup {
+  vertical-align: super;     /* Desplaza el texto ligeramente hacia arriba */
+  font-size: 0.75em;         /* Reduce el tamaño del superíndice al 75% */
+}
+
+/* Abreviaturas e indicaciones <abbr> */
+abbr {
+  text-decoration: underline dotted; /* Añade un subrayado con puntos punteados */
+}
+
+/* Bloques o fragmentos de código <code> */
+code {
+  font-family: Consolas, monospace;   /* Cambia la tipografía a una de ancho fijo tipo consola */
+}
+
+
+/* ==========================================================================
+   LISTAS (ORDENADAS Y DESORDENADAS)
+   ========================================================================== */
+
+/* Configuración para listas <ul> e <ol> */
+ul, ol {
+  padding-left: 30px;        /* Añade sangría a la izquierda para alinear viñetas y números */
+  margin-bottom: 20px;       /* Espacio de separación inferior tras la lista */
+  text-align: left;          /* Alineación a la izquierda */
+}
+
+/* Cambia el color de las viñetas y los números a azul */
+li::marker {
+  color: #3388ee;            /* Pone los puntos y números en color azul */
+  font-weight: bold;         /* Pone las viñetas y números en negrita */
+}
+
+/* Elementos de la lista <li> */
+li {
+  margin-bottom: 5px;        /* Separación de 5px entre un ítem de la lista y el siguiente */
+}
+
+
+/* ==========================================================================
+   LISTAS DE DEFINICIONES (<dl>, <dt>, <dd>)
+   ========================================================================== */
+
+/* Términos a definir (HTML, CSS, etc.) */
+dt {
+  font-weight: bold;         /* Pone los términos en negrita */
+  color: #3388ee;            /* Establece el color del término en azul */
+  margin-top: 10px;          /* Espacio antes del término */
+  text-align: left;          /* Alineación a la izquierda */
+}
+
+/* Descripción/Explicación del término */
+dd {
+  margin-left: 20px;        /* Sangra la explicación hacia la derecha bajo el término */
+  margin-bottom: 8px;        /* Espacio inferior antes del siguiente término o elemento */
+  text-align: left;          /* Alineación a la izquierda */
+}
+
+
+/* ==========================================================================
+   PIE DE PÁGINA (FOOTER)
+   ========================================================================== */
+
+/* Bloque contenedor del pie de página */
+footer {
+  background-color: #3388ee; /* Pone una franja de fondo azul al pie de página */
+  color: #ffffff;            /* Cambia el color del texto a blanco */
+  text-align: center;        /* Centra horizontalmente el contenido */
+  padding: 12px 20px;        /* Relleno de espacio interno arriba/abajo e izquierda/derecha */
+  margin-top: 40px;          /* Separación de 40px respecto a la última sección de contenido */
+  width: 100%;               /* Ocupa el 100% de la anchura disponible */
+  box-sizing: border-box;    /* Controla que los bordes y rellenos no deformen la anchura */
+}
+
+/* Párrafo dentro del pie de página */
+footer p {
+  margin: 0;                 /* Elimina los márgenes por defecto del párrafo interno */
+  text-align: center;        /* Reafirma el centrado del texto del copyright */
+  color: #ffffff;            /* Mantiene el color blanco en el texto del párrafo */
+}
