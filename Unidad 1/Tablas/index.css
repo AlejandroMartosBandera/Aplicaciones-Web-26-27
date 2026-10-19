@@ -1,20 +1,118 @@
+
+/* ESTILO GENERAL */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eeeeee;
+    color: #222222;
+    margin: 0;
+}
+
+/* CABECERA */
+header {
+    background-color: #17202a;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    border-bottom: 5px solid #d4af37;
+}
+
+header h1 {
+    color: #d4af37;
+    font-size: 35px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+/* MENU DE NAVEGACION */
+nav {
+    background-color: #283747;
+    text-align: center;
+    padding: 15px;
+    border-bottom: 2px solid #d4af37;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #d4af37;
+    text-decoration: underline;
+}
+
+/* CONTENIDO PRINCIPAL */
+main {
+    width: 80%;
+    margin: 25px auto;
+}
+
+/* SECCIONES DE LOS ARTISTAS */
+section {
+    background-color: white;
+    margin-bottom: 25px;
+    padding: 25px;
+    border: 2px solid #d4af37;
+    border-radius: 10px;
+}
+
+section h2 {
+    color: #17202a;
+    border-bottom: 3px solid #d4af37;
+    padding-bottom: 10px;
+}
+
+section h3 {
+    color: #7d6608;
+}
+
+/* TABLAS */
 table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-  border: 3px solid black;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: 2px solid #17202a;
 }
 
+/* ENCABEZADOS DE LA TABLA */
 th {
-    background-color: #81a6b5;
+    background-color: #17202a;
+    color: #d4af37;
+    padding: 15px;
+    border: 1px solid #d4af37;
+    text-align: left;
 }
 
-td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
+/* CELDAS */
+td {
+    padding: 12px;
+    border: 1px solid #bbbbbb;
 }
 
+/* FILAS ALTERNAS */
 tr:nth-child(even) {
-  background-color: #dddddd;
+    background-color: #f2f2f2;
 }
+
+/* EFECTO AL PASAR EL RATON */
+tr:hover {
+    background-color: #f9e79f;
+}
+
+/* PIE DE PAGINA */
+footer {
+    background-color: #17202a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-top: 5px solid #d4af37;
+}
+
+footer p {
+    margin: 0;
+}
+
