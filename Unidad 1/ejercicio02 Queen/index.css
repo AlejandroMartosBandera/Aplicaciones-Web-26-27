@@ -23,4 +23,59 @@ body {
        Flexbox se usa aquí solo para organizar esos tres bloques. */
     display: flex;
     flex-direction: column;
+} 
+/* ----------------------------------------------------------
+   2. CABECERA
+   ---------------------------------------------------------- */
+/* Solución exigida por el enunciado: cabecera con Flexbox.
+   justify-content centra el h1 en el eje principal (horizontal)
+   y align-items lo centra en el eje transversal (vertical).
+   text-align centra el texto dentro del propio h1. */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+}
+
+header h1 {
+    margin: 0; /* Eliminamos el margen predeterminado del h1. */
+    text-align: center;
+}
+/* ----------------------------------------------------------
+   3. CONTENIDO PRINCIPAL
+   ---------------------------------------------------------- */
+main {background-color: #FFF;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      max-width: 500px;
+
+    /* El cálculo deja 1rem libre a cada lado en ventanas estrechas.
+       max-width impide que la tarjeta supere 500px. */
+    width: calc(100% - 2rem);
+    max-width: 500px;
+
+    /* Superior: 0; laterales: auto (centra la tarjeta);
+       inferior: auto (absorbe el espacio vertical sobrante en
+       este Flexbox de columnas y deja el footer al fondo).
+       Con flex: 1, empujamos el footer hacia el fondo. */
+    margin: 0 auto;
+    flex: 1;
+
+    padding: 2rem;
+    border-radius: 10px;
+}
+/* ----------------------------------------------------------
+   4. IMAGEN DE LA BANDA
+   ---------------------------------------------------------- */
+.imagen-banda {
+    /* img es un elemento en línea de forma predeterminada;
+       por eso se puede centrar desde su contenedor con text-align. */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.imagen-banda img {
+    width: 100%;
+    border-radius: 10px;
 }
