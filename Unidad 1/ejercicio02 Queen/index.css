@@ -78,4 +78,55 @@ main {background-color: #FFF;
 .imagen-banda img {
     width: 100%;
     border-radius: 10px;
+    
+}
+/* VARIANTE ALTERNATIVA PARA CENTRAR LA IMAGEN (dejar comentada por ahora):
+   Si convertimos la imagen en elemento de bloque, text-align
+   del contenedor ya no la centra. En ese caso podemos usar:
+
+.imagen-banda img {
+    display: block;
+    margin: 0 auto;
+}
+
+   Se conservarian el resto de reglas de .imagen-banda img
+   (width y border-radius).
+*/
+/* ----------------------------------------------------------
+   5. LISTA DE INTEGRANTES
+   ---------------------------------------------------------- */
+.lista-integrantes ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+/* ----------------------------------------------------------
+   6. TABLA DE DISCOS
+   ---------------------------------------------------------- */
+.tabla-exitos table {
+    border-collapse: collapse; /* Une los bordes de celdas contiguas. */
+    margin: 0 auto;        /* Centra la tabla y deja espacio debajo. */
+    margin-bottom: 20px;
+}
+
+.tabla-exitos table,
+.tabla-exitos th,
+.tabla-exitos td {
+    border: 1px solid #DDD;
+}
+
+.tabla-exitos th,
+.tabla-exitos td {
+    padding: 10px;
+}
+
+.tabla-exitos th {
+    background-color: #2C3E50;
+    color: white;
+    text-align: center;
+}
+
+.tabla-exitos td {
+    text-align: left;
+    white-space: nowrap; /* Impide los saltos de línea dentro de celdas.
+    Esto puede provocar desbordamientos en pantallas estrechas. */
 }
