@@ -1,0 +1,146 @@
+/* Estilos generales del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Cabecera superior */
+header {
+    background-color: #237ef5;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+/* Contenido principal de fondo beige */
+main {
+    background-color: beige;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+/* Caja blanca central de la receta */
+.receta {
+    background-color: white;
+    color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+/* Título principal de la receta (Receta Dorada...) */
+.receta > h1 {
+    color: #238cf5;
+    text-align: center;
+    font-size: 1.8rem;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    width: 100%;
+}
+
+/* Caja de la imagen */
+.imagen-receta {
+    text-align: center;
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+.imagen-receta img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Secciones individuales */
+.caracteristicas, .ingredientes, .elaboracion {
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+/* Títulos de las secciones (Características, Ingredientes, Elaboración) 
+   -> Puedes cambiar el color aquí mismo modificando el código hexadecimal (por ejemplo, #2C3E50 para un azul oscuro elegante) */
+.receta h2 {
+    color: #2C3E50; 
+    text-align: left;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    border-bottom: 2px solid #f2f2f2;
+    padding-bottom: 5px;
+}
+
+/* Lista de características */
+.caracteristicas ul {
+    list-style-type: square;
+    padding-left: 20px;
+    margin-top: 0.5rem;
+}
+
+.caracteristicas li {
+    margin-bottom: 8px;
+}
+
+/* Tabla de ingredientes */
+.ingredientes table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 0.5rem;
+}
+
+.ingredientes th {
+    background-color: #2377f5;
+    color: rgb(255, 251, 251);
+    padding: 0.75rem 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.ingredientes td {
+    padding: 0.65rem 1rem;
+    border-bottom: 2px solid #ccc; /* Bordes de la tabla ahora más visibles */
+    text-align: center;
+}
+
+.ingredientes tr:nth-child(even) {
+    background-color: #3562e7; /* Efecto Zebra */
+}
+
+.ingredientes tr:last-child td {
+    border-bottom: none;
+}
+
+/* Párrafo de elaboración */
+.elaboracion p {
+    line-height: 1.6;
+    margin-top: 0.5rem;
+    text-align: justify;
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: rgb(165, 159, 159);
+    text-align: center;
+    padding: 15px;
+}
