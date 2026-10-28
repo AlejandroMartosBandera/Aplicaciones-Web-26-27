@@ -20,7 +20,7 @@ header {
     padding: 1rem;
 }
 
-header h1 {
+header > h1 {
     margin: 0;
     font-size: 1.8rem;
 }
@@ -80,7 +80,7 @@ main {
 
 /* Títulos de las secciones (Características, Ingredientes, Elaboración) 
    -> Puedes cambiar el color aquí mismo modificando el código hexadecimal (por ejemplo, #2C3E50 para un azul oscuro elegante) */
-.receta h2 {
+.receta > h2 {
     color: #2C3E50; 
     text-align: left;
     margin-top: 1.5rem;
