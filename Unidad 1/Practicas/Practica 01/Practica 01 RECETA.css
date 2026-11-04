@@ -11,7 +11,7 @@ body {
 
 /* Cabecera superior */
 header {
-    background-color: #237ef5;
+    background-color: #f1ac43;
     color: white;
     display: flex;
     flex-direction: column;
@@ -51,7 +51,7 @@ main {
 
 /* Título principal de la receta (Receta Dorada...) */
 .receta > h1 {
-    color: #238cf5;
+    color: #f5b323;
     text-align: center;
     font-size: 1.8rem;
     margin-top: 0;
@@ -81,12 +81,12 @@ main {
 /* Títulos de las secciones (Características, Ingredientes, Elaboración) 
    -> Puedes cambiar el color aquí mismo modificando el código hexadecimal (por ejemplo, #2C3E50 para un azul oscuro elegante) */
 .receta > h2 {
-    color: #2C3E50; 
+    color: #e49114f1; 
     text-align: left;
     margin-top: 1.5rem;
     margin-bottom: 0.5rem;
     width: 100%;
-    border-bottom: 2px solid #f2f2f2;
+    border-bottom: 2px solid #ffffff;
     padding-bottom: 5px;
 }
 
@@ -109,7 +109,7 @@ main {
 }
 
 .ingredientes th {
-    background-color: #2377f5;
+    background-color: #f59323;
     color: rgb(255, 251, 251);
     padding: 0.75rem 1rem;
     font-weight: bold;
@@ -123,7 +123,7 @@ main {
 }
 
 .ingredientes tr:nth-child(even) {
-    background-color: #3562e7; /* Efecto Zebra */
+    background-color: #bcbec4; /* Efecto Zebra */
 }
 
 .ingredientes tr:last-child td {
@@ -139,8 +139,8 @@ main {
 
 /* Pie de página */
 footer {
-    background-color: #333;
-    color: rgb(165, 159, 159);
+    background-color: #5a5957;
+    color: rgb(224, 219, 219);
     text-align: center;
     padding: 15px;
 }
