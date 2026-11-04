@@ -47,6 +47,7 @@ main {
     display: flex;
     flex-direction: column;
     text-align: left;
+  
 }
 
 /* Título principal de la receta (Receta Dorada...) */
