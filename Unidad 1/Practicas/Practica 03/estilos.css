@@ -1,0 +1,100 @@
+/* ===== ESTRUCTURA GENERAL ===== */
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    font-family: "Times New Roman", Times, serif;
+    background-color: white;
+}
+
+/* ===== CABECERA ===== */
+header {
+    text-align: center;
+    padding: 10px;
+}
+
+header img {
+    height: 120px;
+    max-width: 100%;
+}
+
+/* ===== MAIN ===== */
+main {
+    padding: 20px 30px;
+}
+
+form {
+    width: fit-content;
+    max-width: 100%;
+}
+
+fieldset {
+    background-color: #f5f0eb;
+    border: 2px solid #8b6914;
+    border-radius: 10px;
+    padding: 10px 10px 15px 10px;
+    margin: 0;
+}
+
+legend {
+    font-weight: bold;
+    color: navy;
+}
+
+fieldset > div {
+    margin-bottom: 14px;
+}
+
+label {
+    color: #8b2323;
+}
+
+textarea {
+    vertical-align: middle;
+}
+
+/* Imagen: etiqueta arriba y botón de archivo debajo */
+label[for="imagen"],
+input[type="file"] {
+    display: block;
+}
+
+input[type="file"] {
+    margin-top: 5px;
+}
+
+/* Botones: último div del fieldset, centrado */
+fieldset > div:last-child {
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* ===== PIE DE PÁGINA ===== */
+footer {
+    background-color: #1d4e89;
+    padding: 15px;
+}
+
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer img {
+    width: 36px;
+    height: 36px;
+}
