@@ -9,55 +9,61 @@
 <body>
 
   <header>
-    <img src="Imagenes/milhouse.png" alt="Logo de la tienda" class="logo">
-    <h1>Todo a 1000$ house</h1>
-    <p>Tu tienda de confianza</p>
+    <div class="cabecera-imagen">
+      <img src="Imagenes/milhouse.png" alt="Imagen de Milhouse">
+      <div>
+        <h1>Todo a 1000$ house</h1>
+        <p>Tu tienda de confianza</p>
+      </div>
+    </div>
     <nav>
-      <a href="#inicio">Inicio</a>
-      <a href="#productos">Productos</a>
-      <a href="#contacto">Contacto</a>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
     </nav>
   </header>
 
   <main id="inicio">
-    <h2>Elige el producto que más te guste de nuestra tienda</h2>
+    <h2 class="titulo-principal">Elige el producto que más te guste de nuestra tienda</h2>
 
-    <section id="productos" class="lista-productos">
+    <section id="productos" class="productos">
 
-      <article class="producto">
+      <div class="tarjeta">
         <img src="Imagenes/pendrive.png" alt="Pen drive de 32 GB">
-        <h3>Pen drive de 32 GB</h3>
-        <p class="descripcion">Pen drive HP de color azul de 32 GB.</p>
+        <h2>Pen drive de 32 GB</h2>
+        <p class="descripcionproducto">Pen drive HP de color azul de 32 GB.</p>
         <p class="precio">1000€</p>
-      </article>
+      </div>
 
-      <article class="producto">
+      <div class="tarjeta">
         <img src="Imagenes/camara.png" alt="Cámara Nikon Coolpix L820">
-        <h3>Cámara Nikon Coolpix L820</h3>
-        <p class="descripcion">Cámara de fotos Nikon Coolpix L820.</p>
+        <h2>Cámara Nikon Coolpix L820</h2>
+        <p class="descripcionproducto">Cámara de fotos Nikon Coolpix L820.</p>
         <p class="precio">1000€</p>
-      </article>
+      </div>
 
-      <article class="producto">
+      <div class="tarjeta">
         <img src="Imagenes/mouse.png" alt="Ratón de ordenador">
-        <h3>Ratón de ordenador</h3>
-        <p class="descripcion">Fantástico ratón de ordenador con luces de colores.</p>
+        <h2>Ratón de ordenador</h2>
+        <p class="descripcionproducto">Fantástico ratón de ordenador con luces de colores.</p>
         <p class="precio">1000€</p>
-      </article>
+      </div>
 
-      <article class="producto">
+      <div class="tarjeta">
         <img src="Imagenes/diskette.png" alt="Diskettes de 3 1/2">
-        <h3>Diskettes de 3 1/2</h3>
-        <p class="descripcion">Diskettes de 3 1/2 para guardar tus fotos.</p>
+        <h2>Diskettes de 3 1/2</h2>
+        <p class="descripcionproducto">Diskettes de 3 1/2 para guardar tus fotos.</p>
         <p class="precio">1000€</p>
-      </article>
+      </div>
 
-      <article class="producto">
-        <img src="Imagenes/milhouse.png" alt="Producto Sorpresa">
-        <h3>Producto sorpresa</h3>
-        <p class="descripcion">El producto más sorprendente de nuestra tienda.</p>
+      <div class="tarjeta">
+        <img src="Imagenes/milhouse.png" alt="Producto sorpresa">
+        <h2>Producto sorpresa</h2>
+        <p class="descripcionproducto">El producto más sorprendente de nuestra tienda.</p>
         <p class="precio">1000€</p>
-      </article>
+      </div>
 
     </section>
   </main>

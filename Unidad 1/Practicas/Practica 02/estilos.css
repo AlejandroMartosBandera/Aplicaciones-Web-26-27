@@ -5,31 +5,48 @@ body {
   color: #222222;
 }
 
-
+/* ---------- CABECERA ---------- */
 header {
   background-color: #4caf50;
   color: white;
-  text-align: center;
   padding: 10px 20px;
 }
 
-.logo {
+/* FLEXBOX: imagen a la izquierda y textos a la derecha */
+.cabecera-imagen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.cabecera-imagen img {
   height: 60px;
 }
 
-header h1 {
-  margin: 5px 0;
+.cabecera-imagen div {
+  text-align: center;
+}
+
+.cabecera-imagen h1 {
+  margin: 0;
   font-size: 24px;
 }
 
-header p {
-  margin: 0 0 8px 0;
+.cabecera-imagen p {
+  margin: 5px 0 0 0;
   font-size: 11px;
 }
-nav {
+
+/* ---------- NAVEGACION PRINCIPAL ---------- */
+/* FLEXBOX: los li del menu en fila y centrados */
+nav ul {
   display: flex;
   justify-content: center;
   gap: 20px;
+  list-style: none;
+  margin: 10px 0 0 0;
+  padding: 0;
 }
 
 nav a {
@@ -41,28 +58,28 @@ nav a {
 
 nav a:hover {
   text-decoration: underline;
-  
 }
 
-
+/* ---------- CONTENIDO ---------- */
 main {
   padding: 20px;
 }
 
-main h2 {
+.titulo-principal {
   text-align: center;
   font-size: 22px;
 }
 
-
-.lista-productos {
+/* FLEXBOX: las tarjetas en fila y centradas */
+.productos {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
 }
 
-.producto {
+/* ---------- TARJETA DE PRODUCTO ---------- */
+.tarjeta {
   background-color: #fafafa;
   border: 1px solid #dddddd;
   border-radius: 10px;
@@ -71,18 +88,18 @@ main h2 {
   text-align: center;
 }
 
-.producto img {
+.tarjeta img {
   width: 100%;
   height: 110px;
-  object-fit: contain;   /* la imagen cabe entera sin deformarse */
+  object-fit: contain;
 }
 
-.producto h3 {
+.tarjeta h2 {
   font-size: 16px;
   margin: 10px 0;
 }
 
-.descripcion {
+.descripcionproducto {
   font-size: 11px;
   color: #666666;
 }
@@ -92,13 +109,12 @@ main h2 {
   font-size: 14px;
 }
 
-
-.producto:hover {
+.tarjeta:hover {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   transform: translateY(-4px);
 }
 
-
+/* ---------- PIE ---------- */
 footer {
   background-color: #4caf50;
   color: white;
